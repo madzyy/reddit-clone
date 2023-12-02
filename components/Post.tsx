@@ -70,7 +70,7 @@ function Post({post}: Props) {
 
   useEffect(()=> {
     const votes:Vote[] = data?.voteListByPostId
-    const userVote = votes?.find(
+    const userVote:any = votes?.find(
       (vote) => vote.username ==  session?.user?.name
     )?.upvote
 
