@@ -10,9 +10,12 @@ import toast from 'react-hot-toast'
 import Avatar from '../../components/Avatar'
 import Timeago from 'react-timeago'
 
+
 type FormData = {
     comment: string
 }
+
+
 type Post = {
     body: string
     created_at: string
@@ -33,6 +36,7 @@ type Comment = {
     text: string
     username: string
 }
+
 function PostPage() {
     const router = useRouter()
     const {data: session} = useSession()
@@ -46,7 +50,6 @@ function PostPage() {
     })
 
     const post: Post = data?.postListByPostId
-    // const comment: Comment = data?.postListByPostId.comment
     const {register, handleSubmit, watch, setValue, formState: {errors}} = useForm<FormData>()
     console.log("data is served", data)
     const onSubmit:SubmitHandler<FormData> = async (data) => {
@@ -71,7 +74,7 @@ function PostPage() {
     console.log(data)
     return (
     <div className='mx-auto my-7 max-w-5xl'>
-        <Post post = {post} />
+        <Post post={post} />
         <div className='-mt-1 rounded-b-md border border-t-0 border-gray-300 bg-white p-5 pl-16'>
             <p className='text-sm'>Comment as <span className='text-red-500'>{session?.user?.name}</span></p>
 
