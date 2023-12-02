@@ -76,7 +76,7 @@ export const GET_POST_BY_POST_ID = gql`
             title
             subreddit_id
             username
-            comment{
+            comments{
                 created_at
                 id
                 post_id

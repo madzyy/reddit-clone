@@ -8,7 +8,7 @@ type Post = {
     title: string
     username: string
     vote: Vote[]
-    comment: Comment[]
+    comments: Comment[]
     subreddit: Subreddit[]
 }
 

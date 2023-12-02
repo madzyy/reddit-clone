@@ -45,6 +45,3 @@ const Home: NextPage = () => {
 
 export default Home
 
-//chumphon
-//chumphon::stepzen.io+1000::5b0a2941cb5c1c828d1ee942537f30c2a744ef48e5b96e0c3afdc8f185706c4c
-//chumphon::stepzen.net+1000::35b4b5194577093d94cfa050feb2679285630a4ba6bfb9f4c47600dd65525d2b

@@ -11,7 +11,7 @@ import { GET_ALL_VOTES_BY_POST_ID } from '../graphql/queries'
 import { ADD_VOTE } from '../graphql/mutations'
 
 type Props = {
-    post: Post
+    post: any
 }
 function Post({post}: Props) {
 
@@ -120,7 +120,7 @@ function Post({post}: Props) {
           <div className='flex space-x-4 text-gray-400'>
             <div className='postButtons'>
               <ChatBubbleOvalLeftEllipsisIcon className='h-6 w-6' />
-              <p className=''>{post.comment.length} Comments</p>
+              <p className=''>{post.comments.length} Comments</p>
             </div>
 
             <div className='postButtons'>
