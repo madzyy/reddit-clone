@@ -10,6 +10,7 @@ type Comment {
 type Post {
   body: String
   comments: [Comment] @materializer(query: "commentUsingComment_post_id_fkey")
+  comment: [Comment] @materializer(query: "commentUsingComment_post_id_fkey")
   created_at: DateTime!
   id: ID!
   image: String
